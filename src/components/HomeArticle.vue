@@ -17,6 +17,7 @@ section.home-article(ref="self", :style="style")
 </template>
 
 <script lang="kss">
+import axios from 'axios'
 import dayjs from 'dayjs'
 
 import styleSettable from '@/scripts/mixins/styleSettable'
@@ -28,14 +29,18 @@ export default {
 
   data: function() {
     return {
-      articles: []
+      articles: [],
+      url: "https://qiita.com/api/v2/users/isuke/items?per_page=100",
     }
   },
 
   methods: {
     setArticles() {
       if (process.env.NODE_ENV === 'production') {
-        // TODO
+        axios.get(this.url)
+          .then((response) => {
+            this.articles = response.data
+          })
       } else {
         this.articles = sampleArticles
       }
