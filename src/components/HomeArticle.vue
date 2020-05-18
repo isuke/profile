@@ -1,5 +1,5 @@
 <template lang="pug">
-section.home-article
+section.home-article(ref="self", :style="style")
   h1.title Articles
 
   table.table
@@ -19,9 +19,13 @@ section.home-article
 <script lang="kss">
 import dayjs from 'dayjs'
 
+import styleSettable from '@/scripts/mixins/styleSettable'
+
 import sampleArticles from '@/sample_articles.json'
 
 export default {
+  mixins: [styleSettable],
+
   data: function() {
     return {
       articles: []

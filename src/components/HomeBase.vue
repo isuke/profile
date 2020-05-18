@@ -1,5 +1,5 @@
 <template lang="pug">
-section.home-base
+section.home-base(ref="self", :style="style")
   transition(name="fade", mode="out-in")
     img.icon(:src="logo1", alt="logo", @click="clickedLogo", v-if="currentLogo === logo1", :key="logo1")
     img.icon(:src="logo2", alt="logo", @click="clickedLogo", v-if="currentLogo === logo2", :key="logo2")
@@ -18,10 +18,14 @@ section.home-base
 </template>
 
 <script lang="ts">
+import styleSettable from '@/scripts/mixins/styleSettable'
+
 import logo1 from '@/assets/logo01.png'
 import logo2 from '@/assets/logo02.png'
 
 export default {
+  mixins: [styleSettable],
+
   data: function() {
     return {
       logo1: logo1,
@@ -34,6 +38,10 @@ export default {
     clickedLogo() {
       this.currentLogo = this.currentLogo === logo1 ? logo2 : logo1
     },
+  },
+
+  created() {
+    this.style.opacity = 1
   },
 }
 </script>

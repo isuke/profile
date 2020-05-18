@@ -24,6 +24,10 @@ export default {
   > .section {
     min-height: 100vh;
     text-align: center;
+
+    &:not(:last-child) {
+      border-bottom: var(--bold-border-width) var(--theme-color1) solid;
+    }
   }
 }
 </style>

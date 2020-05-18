@@ -1,5 +1,5 @@
 <template lang="pug">
-section.home-detail
+section.home-detail(ref="self", :style="style")
   dl.contents
     dt.term Mind
     dd.description Just for Fun.
@@ -31,7 +31,11 @@ section.home-detail
 </template>
 
 <script lang="ts">
-export default {}
+import styleSettable from '@/scripts/mixins/styleSettable'
+
+export default {
+  mixins: [styleSettable],
+}
 </script>
 
 <style lang="scss" scoped>
@@ -41,8 +45,8 @@ export default {}
   align-items: center;
   justify-content: center;
 
-  background-color: var(--day-bg-color1);
-  color: var(--day-ft-color1);
+  background-color: var(--night-bg-color1);
+  color: var(--night-ft-color1);
 
   padding: var(--space-size-xxl) var(--space-size-m);
 
