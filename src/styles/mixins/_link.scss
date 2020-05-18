@@ -1,0 +1,8 @@
+@mixin link($my-ft-color1: var(--day-ft-color1), $my-fr-color2: var(--day-ft-color2)) {
+  color: $my-ft-color1;
+  text-decoration: underline;
+
+  :visited {
+    color: $my-fr-color2;
+  }
+}

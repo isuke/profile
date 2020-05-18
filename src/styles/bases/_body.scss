@@ -1,0 +1,49 @@
+:root {
+  --default-font-family: HiraginoSans, Hiragino Kaku Gothic ProN, Meiryo, Arial, sans-serif;
+
+  --unit: 16px;
+
+  --ft-size-xxl: calc(var(--unit) * 3.25);
+  --ft-size-xl:  calc(var(--unit) * 2.00);
+  --ft-size-l:   calc(var(--unit) * 1.25);
+  --ft-size-m:   calc(var(--unit) * 0.75);
+  --ft-size-s:   calc(var(--unit) * 0.50);
+  --ft-size-xs:  calc(var(--unit) * 0.25);
+
+  --space-size-xxl: calc(var(--unit) * 3.25);
+  --space-size-xl:  calc(var(--unit) * 2.00);
+  --space-size-l:   calc(var(--unit) * 1.25);
+  --space-size-m:   calc(var(--unit) * 0.75);
+  --space-size-s:   calc(var(--unit) * 0.50);
+  --space-size-xs:  calc(var(--unit) * 0.25);
+
+  --theme-color1: #90b44b;
+
+  --night-bg-color1: #333333;
+  --night-ft-color1: #f0f0ff;
+  --night-ft-color2: #9595a9;
+
+  --day-bg-color1: #fdfdfb;
+  --day-bg-color2: #e8e8e2;
+  --day-ft-color1: #33333f;
+  --day-ft-color2: #1f1f26;
+
+  --base-border-width: 1px;
+
+  --border-radius-m: 4px;
+
+  --bold-font-weight: 700;
+
+  width: 100vw;
+  height: 100vh;
+  font-size: var(--unit);
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: var(--default-font-family);
+  font-size: var(--ft-size-m);
+  background-color: var(--night-bg-color1);
+  color: var(--night-ft-color1);
+}
