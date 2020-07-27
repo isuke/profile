@@ -6,7 +6,7 @@ section.home-base(ref="self", :style="style")
   h2.name
     ruby.string.family
       rt.text 藤山
-      rp.parentheses HUJIYAMA
+      rp.parentheses FUJIYAMA
     ruby.string.personal
       rt.text 鋳助
       rp.parentheses Isuke
