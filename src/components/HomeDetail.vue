@@ -1,5 +1,7 @@
 <template lang="pug">
 section.home-detail(ref="self", :style="style")
+  h1.title Detail
+
   dl.contents
     dt.term Mind
     dd.description Just for Fun.
@@ -49,6 +51,13 @@ export default {
   color: var(--night-ft-color1);
 
   padding: var(--space-size-xxl) var(--space-size-m);
+
+  > .title {
+    font-size: var(--ft-size-xxl);
+    font-weight: var(--bold-font-weight);
+
+    margin-bottom: var(--space-size-xxl);
+  }
 
   > .contents {
     > .term {

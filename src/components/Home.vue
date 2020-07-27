@@ -1,18 +1,21 @@
 <template lang="pug">
 main.home
   home-base.section
+  home-work.section
   home-detail.section
   home-article.section
 </template>
 
 <script lang="js">
 import HomeBase from '@/components/HomeBase.vue'
+import HomeWork from '@/components/HomeWork.vue'
 import HomeDetail from '@/components/HomeDetail.vue'
 import HomeArticle from '@/components/HomeArticle.vue'
 
 export default {
   components: {
     HomeBase,
+    HomeWork,
     HomeDetail,
     HomeArticle,
   }

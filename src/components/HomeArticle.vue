@@ -65,7 +65,7 @@ export default {
   padding: var(--space-size-xxl) var(--space-size-m);
 
   > .title {
-    font-size: var(--ft-size-xl);
+    font-size: var(--ft-size-xxl);
     font-weight: var(--bold-font-weight);
 
     margin-bottom: var(--space-size-xxl);

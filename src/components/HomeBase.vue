@@ -108,7 +108,7 @@ export default {
       @include link(var(--night-ft-color1), var(--night-ft-color2));
 
       &:not(:last-child) {
-        margin-bottom: 1.5em;
+        margin-bottom: 1em;
       }
     }
   }
