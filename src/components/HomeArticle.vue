@@ -16,7 +16,7 @@ section.home-article(ref="self", :style="style")
         td.data.like {{ article['likes_count'] }}
 </template>
 
-<script lang="kss">
+<script lang="js">
 import axios from 'axios'
 import dayjs from 'dayjs'
 

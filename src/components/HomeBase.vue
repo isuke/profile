@@ -18,7 +18,7 @@ section.home-base(ref="self", :style="style")
     li.account: a.link(target="_blank", rel="noopener noreferrer", href="https://twitter.com/Isuke_0") Twitter
 </template>
 
-<script lang="ts">
+<script lang="js">
 import styleSettable from '@/scripts/mixins/styleSettable'
 
 import logo1 from '@/assets/logo01.png'

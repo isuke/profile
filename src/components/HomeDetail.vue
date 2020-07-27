@@ -30,7 +30,7 @@ section.home-detail(ref="self", :style="style")
 
 </template>
 
-<script lang="ts">
+<script lang="js">
 import styleSettable from '@/scripts/mixins/styleSettable'
 
 export default {
