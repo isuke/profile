@@ -1,5 +1,5 @@
 <template lang="pug">
-section.home-detail(ref="self", :style="style")
+section#detail.home-detail(ref="self", :style="style")
   h1.title Detail
 
   dl.contents

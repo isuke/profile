@@ -1,5 +1,5 @@
 <template lang="pug">
-section.home-article(ref="self", :style="style")
+section#article.home-article(ref="self", :style="style")
   h1.title Articles
 
   table.table

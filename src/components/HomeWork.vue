@@ -1,5 +1,5 @@
 <template lang="pug">
-section.home-work(ref="self", :style="style")
+section#work.home-work(ref="self", :style="style")
   h1.title Work
 
   section.section

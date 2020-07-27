@@ -1,5 +1,5 @@
 <template lang="pug">
-section.home-base(ref="self", :style="style")
+section#base.home-base(ref="self", :style="style")
   transition(name="fade", mode="out-in")
     img.icon(:src="logo1", alt="logo", @click="clickedLogo", v-if="currentLogo === logo1", :key="logo1")
     img.icon(:src="logo2", alt="logo", @click="clickedLogo", v-if="currentLogo === logo2", :key="logo2")
