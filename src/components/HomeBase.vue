@@ -15,6 +15,7 @@ section.home-base(ref="self", :style="style")
     li.account: a.link(target="_blank", rel="noopener noreferrer", href="https://qiita.com/isuke") Qiita
     li.account: a.link(target="_blank", rel="noopener noreferrer", href="https://ja.stackoverflow.com/users/28630/isuke-fujiyama") Stack Overflow JP
     li.account: a.link(target="_blank", rel="noopener noreferrer", href="https://codepen.io/isuke") CodePen
+    li.account: a.link(target="_blank", rel="noopener noreferrer", href="https://twitter.com/Isuke_0") Twitter
 </template>
 
 <script lang="ts">
